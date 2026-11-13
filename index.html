@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"  content="width=device-width , initial-scale=1.0">
+        <title>FocusBloom</title>
+        <link rel ="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class = "container">
+            <h1>FocusBloom</h1>
+            <p class = "tagline">A simple Focus Timer</p>
+
+            <div class = "modes">
+                <button onclick="setMode(25,'focus')" id="btn-focus" class="mode active">Focus</button>
+                <button onclick = "setMode(5,'short')" id="btn-short" class="mode">Short Break</button>
+                <button onclick="setMode(15,'long')" id="btn-long" class="mode">Long Break</button>
+            </div>
+
+            <div class = "timer">
+                <span id ="time">25:00</span>
+            </div>
+
+            <div class = "controls">
+                <button onclick="startTimer()" id="start">Start</button>
+                <button onclick="pauseTimer()" id="pause">Pause</button>
+                <button onclick="resetTimer()" id="reset">reset</button>
+            </div>
+            <div class="stats">
+                <p>Sessions Today:<span id="sessions">0</span></p>
+                <p> Total Focus Time: <span id ="total">0</span>min</p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
